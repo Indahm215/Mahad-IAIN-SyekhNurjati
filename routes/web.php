@@ -14,5 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.dashboard');
 });
+
+Route::get('/sej', function () {
+    return view('user.sejarah');
+});
+
+Route::get('/vimi', function () {
+    return view('user.visimisi');
+});
+
+Route::get('/tuj', function () {
+    return view('user.tujuan');
+});
+
+Route::get('/ked', function () {
+    return view('user.kedudukan');
+});
+
+Route::get('/stor', function () {
+    return view('user.stor');
+});
+
+

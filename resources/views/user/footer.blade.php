@@ -54,7 +54,7 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>@2023</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>@2023</span></strong> Mahad IAIN Syekh Nurjati
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

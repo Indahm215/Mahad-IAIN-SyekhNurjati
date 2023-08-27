@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('admin.dashboard');
+});
+Route::get('/usr', function () {
     return view('user.dashboard');
 });
-
 Route::get('/sej', function () {
     return view('user.sejarah');
 });

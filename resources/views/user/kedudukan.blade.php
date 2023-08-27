@@ -32,14 +32,17 @@
             <p>Bahkan, keberadaan ma`had bagi lembaga pendidikan tinggi Islam seperti IAIN dapat dikatakan sebagai salah satu rukunnya. Tanpa kehadiran pesantren dan ma`had bagi IAIN, maka kehadirannya bisa sia-sia.</p>
             <p>Pernyataan ini tidak berlebihan mengingat tugas IAIN sebagai lembaga pendidikan tinggi Agama Islam yang demikian berat dan mulia, yaitu menyiapkan kader ulama yang ilmuan dan ilmuan yang ulama.</p>
             <p>Atau setidaknya, mempersiapkan akademisi yang agamawan, dan agamawan yang juga akademisi.</p>
-            <p>Secara kelembagaan, IAIN juga memiliki tugas serta mandat dalam pengembangan integrasi keilmuan, yang—secara konseptual—meliputi: hadharah al-nash, hadharah al-`ilmi, hadharah al-falsafah, dan hadharah al-`irfan.</p>
           </div>
           <div class="col-lg-6">
+            </br>
+            </br> 
+            <p>Secara kelembagaan, IAIN juga memiliki tugas serta mandat dalam pengembangan integrasi keilmuan, yang—secara konseptual—meliputi: hadharah al-nash, hadharah al-`ilmi, hadharah al-falsafah, dan hadharah al-`irfan.</p>
+            
             <h3>FUNGSI</h3>
             <p>Sejalan dengan kedudukan, tugas serta mandat tersebut di atas, maka IAIN mempunyai fungsi untuk menjaga, mengembangkan serta mentransmisikan peradaban serta keilmuan di dalam Islam.</p>
             <p>Maka, kehadiran Ma`had di IAIN SNJ Cirebon, selain untuk menghendel hal-hal yang belum tercover oleh lembaga, juga untuk melakukan intensifikasi dan akselerasi program keagamaan serta program-program lainnya yang relevan.</p>
             <p>Fungsi tersebut meliputi pengembagan pembelajaran bidang Al-Qur’an, kitab kuning, `ibadah, praktek bahasa asing, tsaqafah ma`hadiyah serta pengembangan minat dan bakat.</p>
-            <img src="/assets/asramabiru.jpeg" class="img-fluid rounded-4 mb-4" alt="">
+            <img src="/assets/utama1.jpg" class="img-fluid rounded-4 mb-4" alt="">
           </div>
         </div>
 

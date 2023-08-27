@@ -133,8 +133,14 @@
             <h3>Kata Pengantar</h3>
             <img src="/assets/dok1.jpeg" class="img-fluid rounded-4 mb-4" alt="">
             
-            <p>Sejak  berdirinya  Institut  Agama  Islam  Negeri  (IAIN)  Syekh  Nurjati  yang sebelumnya bernama STAIN Cirebon Fakultas Tarbiyah IAIN Sunan Gunung Djati Cirebon, memiliki mandat utama sebagai pusat pengkajian dan pengembangan ilmu- ilmu keislaman.</p>
-            <p>Berada disebuah wilayah tiga cirebon dengan masyarakat yang dikenal religius, IAIN Syekh Nurjati Cirebon memiliki kedudukan yang strategis bagi pembentukan citra Islam di Indonesia. kontribusi itu akan semakin nyata dengan berbagai tawaran alternatif kajian keislaman yang komprehensif dalam mengatasi persoalan umat dan bangsa.</p>
+            <p>Mahad IAIN Syekh Nurjati merupakan asrama yang khusus diperuntukan bagi para mahasantri baru semester 1 dan semester 2 dari semua fakultas yang saat ini terdiri dari 5 fakultas, sebagai berikut : </p>
+            <ol>
+              <li> Fakultas Ilmu Tarbiyah dan Keguruan</li>
+              <li> Fakultas Ushuluddin dan Adab</li>
+              <li> Fakultas Dakwah dan Komunikasi Islam</li>
+              <li> Fakultas Syariah</li>
+              <li> Fakultas Ekonomi dan Bisnis Islam</li>
+            </ol>
           </div>
           <div class="col-lg-6">
             <div class="content ps-0 ps-lg-5">
@@ -146,10 +152,7 @@
                 <li><i class="bi bi-check-circle-fill"></i> Memiliki channel Youtube yang berisi kajian-kajian dari maha guru kami.</li>
                 <li><i class="bi bi-check-circle-fill"></i> Memiliki sosial media dari mulai Facebook, Instagram, Twitter, sampai LinkeIn untuk memberikan update terkini.</li>
               </ul>
-              <p>
-              Secara kelembagaan, IAIN juga memiliki tugas serta mandat dalam pengembangan integrasi keilmuan, yang—secara konseptual—meliputi: hadharah al-nash, hadharah al-`ilmi, hadharah al-falsafah, dan hadharah al-`irfan.
-              </p>
-
+              <p>Mahad sendiri sifatnya bergilir, para mahasantri baru akan diberikan tes untuk mengetahui nilai mahasantri yang nantinya akan dijadikan acuan oleh pihak mahad dalam menentukan siapa saja para mahasantri yang akan masuk ke mahad pada semester satu dan semester dua nanti.</p>
               <div class="position-relative mt-4">
                 <img src="/assets/kajian.jpg" class="img-fluid rounded-4" alt="">
                 <a href="https://youtu.be/WDLgfqMDH4I" target="_blank" class="glightbox play-btn"></a>
@@ -160,6 +163,28 @@
 
       </div>
     </section><!-- End About Us Section -->
+
+<!-- ======= Clients Section ======= -->
+  <!-- <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="clients/mesjid.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="clients/ruangbelajar.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="clients/mejabelajar.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="clients/kasur.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="clients/lemari.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="clients/jemuran.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+     -->
+  <!-- End Clients Section -->
+
+
 
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
@@ -175,17 +200,17 @@
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Pengajar</strong> consequuntur quae diredo para mesta</p>
+              <p><strong>Mahaguru</strong> consequuntur quae diredo para mesta</p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Tutor</strong> adipisci atque cum quia aut</p>
+              <p><strong>Mahasantri</strong> adipisci atque cum quia aut</p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Santri</strong> aut commodi quaerat</p>
+              <p><strong>Tutor</strong> aut commodi quaerat</p>
             </div><!-- End Stats Item -->
 
           </div>

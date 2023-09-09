@@ -135,8 +135,8 @@
                               <i class="fa fa-user green"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Admin</a>
-                              <p><strong>2300 </strong> Total Admin </p>
+                              <a class="title" href="#">Administrator</a>
+                              <p><strong>2300 </strong> Total Administrator </p>
                               <p> <small>Lihat Data</small>
                               </p>
                             </div>

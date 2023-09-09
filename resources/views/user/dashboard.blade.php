@@ -27,6 +27,8 @@
 
   <!-- Template Main CSS File -->
   <link href="/user/assets/css/main.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="/user/assets/css/formulir.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Impact
@@ -690,16 +692,19 @@
 
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                 </div>
+              </div> -->
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama" required>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="7" placeholder="Tulis pertanyaanmu di sini" required></textarea>
@@ -738,6 +743,8 @@
 
   <!-- Template Main JS File -->
   <script src="/user/assets/js/main.js"></script>
+  <!-- Template Main JS File -->
+  <script src="/user/assets/js/formulir.js"></script>
 
 </body>
 

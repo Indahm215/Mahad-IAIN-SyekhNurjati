@@ -39,11 +39,11 @@
                       <li><a href="projects.html">Profil Tutor</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-lock"></i> Admin <span class="fa fa-plus"></span></a>
+                  <li><a><i class="fa fa-lock"></i> Administrator <span class="fa fa-plus"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="e_commerce.html">Semua Admin</a></li>
-                      <li><a href="projects.html">Tambah Admin</a></li>
-                      <li><a href="projects.html">Profil Admin</a></li>
+                      <li><a href="e_commerce.html">Semua Administrator</a></li>
+                      <li><a href="projects.html">Tambah Administrator</a></li>
+                      <li><a href="projects.html">Profil Administrator</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -86,7 +86,7 @@
                     </ul>
                   <li><a><i class="fa fa-edit"></i> Pendaftaran <span class="fa fa-plus"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html">Calon Pendaftar</a></li>
+                      <li><a href="form.html">Pendaftar Baru</a></li>
                       <li><a href="form_validation.html">Unggah Dokumen</a></li>
                     </ul>
                   </li>
@@ -105,7 +105,7 @@
                   <li><a><i class="fa fa-question-circle"></i> FAQ's <span class="fa fa-plus"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="page_403.html">Semua Faq</a></li>
-                      <li><a href="page_404.html">Tambah Faq</a></li>
+                      <li><a href="page_404.html">Edit Faq</a></li>
                     </ul>
                   </li>              
                 </ul>

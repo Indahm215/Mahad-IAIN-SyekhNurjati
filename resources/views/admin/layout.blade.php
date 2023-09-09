@@ -83,5 +83,8 @@
     
     <!-- Custom Theme Scripts -->
     <script src="../admin/build/js/custom.min.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <!-- <script src="../admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script> -->
+
     </body>
 </html>

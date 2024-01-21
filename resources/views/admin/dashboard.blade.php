@@ -6,30 +6,30 @@
 
                 <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
                   <div class="tile-stats">
-                    <div class="icon"><i class="fa fa-edit"></i></div>
-                    <div class="count">179</div>
-                    <h3>Pendaftar</h3>
-                  </div>
-                </div>
-                <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
-                  <div class="tile-stats">
                     <div class="icon"><i class="fa fa-users"></i></div>
                     <div class="count">179</div>
-                    <h3>Mahasantri</h3>
-                  </div>
-                </div>
-                <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
-                  <div class="tile-stats">
-                    <div class="icon"><i class="fa fa-user"></i></div>
-                    <div class="count">179</div>
-                    <h3>Mahaguru</h3>
+                    <h3>Pendaftar Baru</h3>
                   </div>
                 </div>
                 <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
                   <div class="tile-stats">
                     <div class="icon"><i class="fa fa-smile-o"></i></div>
                     <div class="count">179</div>
-                    <h3>Tutor</h3>
+                    <h3>Daftar Diterima</h3>
+                  </div>
+                </div>
+                <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
+                  <div class="tile-stats">
+                    <div class="icon"><i class="fa fa-frown-o"></i></div>
+                    <div class="count">179</div>
+                    <h3>Daftar Ditolak</h3>
+                  </div>
+                </div>
+                <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
+                  <div class="tile-stats">
+                    <div class="icon"><i class="fa fa-book"></i></div>
+                    <div class="count">179</div>
+                    <h3>Fakultas</h3>
                   </div>
                 </div>
                 <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
@@ -55,7 +55,7 @@
                 </div> -->
                 <div class="animated flipInY col-sm-2 col-sm-1 col-sm-1 ">
                   <div class="tile-stats">
-                    <div class="icon"><i class="fa fa-question-circle"></i></div>
+                    <div class="icon"><i class="fa fa-comments"></i></div>
                     <div class="count">179</div>
                     <h3>FAQ's Baru</h3>
                   </div>
@@ -74,7 +74,7 @@
                   <div class="col-md-3 col-sm-12 ">
                     <div>
                         <div class="x_title">
-                          <h2>Top Profiles</h2>
+                          <h2>Profiles</h2>
                           <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                             </li>
@@ -91,8 +91,8 @@
                               <i class="fa fa-user aero"></i>
                             </a>
                             <div class="media-body">
-                              <a class="title" href="#">Pendaftar</a>
-                              <p><strong>2300 </strong> Total Pendaftar Baru </p>
+                              <a class="title" href="#">Akun User</a>
+                              <p><strong>2300 </strong> Total Akun User </p>
                               <p> <small>Lihat Data</small>
                               </p>
                             </div>

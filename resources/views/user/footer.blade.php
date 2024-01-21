@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <div class="logo d-flex align-items-center">
             <span>Mahad</span>
-          </a>
+          </div>
           <p>Jl. Perjuangan By Pass Sunyaragi, Kota Cirebon, Jawa Barat, Indonesia. 45132 Telp : +62231-481264</p>
           <div class="social-links d-flex mt-4">
             <a href="https://twitter.com/iaincerbon" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>

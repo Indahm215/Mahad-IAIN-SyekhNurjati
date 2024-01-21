@@ -81,7 +81,13 @@
               <li><a href="{{url('/stor')}}">Struktur Organisasi</a></li>
             </ul>
           </li>
-          <li><a href="#faq">FAQ's</a></li>
+          <li class="dropdown"><a href="#"><span>FAQ's</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#faq">Lihat FAQ</a></li>
+              <li><a href="{{route('faq.create')}}">Ajukan Pertanyaan</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Pendaftaran</a></a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -249,81 +255,16 @@
           </div>
 
           <div class="row gy-4 portfolio-container">
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-santri">
+          @foreach ($dataGal as $item)
+            <div class="col-xl-3 col-md-6 portfolio-item {{ 'filter-'.$item->kategori_gambar }}">
+              
               <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
+                <a href="{{ asset('gambargaleri/'.$item->gambar) }}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{{ asset('gambargaleri/'.$item->gambar) }}" height="230px" class="img-fluid"></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-kegiatan">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-fasilitas">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-acara">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-santri">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-kegiatan">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-fasilitas">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-acara">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-santri">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-kegiatan">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-fasilitas">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-md-6 portfolio-item filter-acara">
-              <div class="portfolio-wrap">
-                <a href="/user/assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/user/assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+          @endforeach
+              
           </div><!-- End Portfolio Container -->
-
         </div>
 
       </div>
@@ -335,64 +276,26 @@
 
         <div class="section-header">
           <h2>Pengurus</h2>
-          <p>Pembimbing dan tutor terbaik serta pakar di bidangnya</p>
+          <p>Pembimbing dan Tutor terbaik serta pakar di bidangnya!</p>
         </div>
 
         <div class="row gy-4">
-
+          @foreach($dataTut as $item)
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="/user/assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <h4>Walter White</h4>
-              <span>Web Development</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              <img src="{{ asset('gambargaleri/'.$item->foto) }}" height="100%" class="img-fluid" alt="">
+              <h4>{{ $item -> nama }}</h4>
+              <span>Tutor</span>
+              
             </div>
           </div><!-- End Team Member -->
+          @endforeach
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <img src="/user/assets/img/team/team-2.jpg" class="img-fluid" alt="">
               <h4>Sarah Jhinson</h4>
-              <span>Marketing</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="/user/assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <h4>William Anderson</h4>
-              <span>Content</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="/user/assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              <span>Pembimbing</span>
             </div>
           </div><!-- End Team Member -->
 
@@ -419,38 +322,21 @@
           <div class="col-lg-8">
 
             <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
-
+            @foreach ($dataFaq as $item)  
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <span class="num">1.</span>
-                    Apakah mahad IAIN mempunyai aplikasi belajar sendiri?
+                    <span class="num">•</span>
+                    {{ $item -> pertanyaan }}
                   </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Ya. Mahad IAIN Syekh Nurjati mempunyai aplikasi learning web sendiri yang bernama
+                    {{ $item -> jawaban }}
                   </div>
                 </div>
               </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <span class="num">2.</span>
-                    Apa saja evaluasi dan pengujian program Ma'had?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    <p>Evaluasi dan pengujian program Ma’had al-Jami’ah diharapkan dapat mencapai target sebagai berikut : </p>
-                    <p>1. Kitab Kuning</p>
-                    <p>2. Tahsin Al-qira’ah</p>
-                    <p>3. Praktek Ibadah</p>
-                    <p>4. Tsaqafah Ma’hadiyah</p>
-                    <p>5. Bi’ah Lughowiyah</p>
-                  </div>
-                </div>
+              @endforeach
             </div>
 
           </div>
@@ -465,25 +351,23 @@
 
       <div class="section-header">
           <h2>Blog Terkini</h2>
-          <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
+          <p>Baca Pengumuman, Berita, dan Informasi Penting Seputar Ma'had IAIN Syekh Nurjati di sini</p>
         </div>
 
         <div class="row gy-5 posts-list">
-
+          @foreach ($dataBlog as $item)
           <div class="col-xl-3 col-md-6">
             <article>
-
               <div class="post-img">
-                <img src="/user/assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('gambargaleri/'.$item->gambar) }}" height="180px" alt="" class="img-fluid">
               </div>
-
-              <p class="post-category">Politics</p>
+              <p class="post-category">{{ $item->kategori }}</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                <a href="{{ $item->link }}" target="_blank">{{ $item->judul }}</a>
               </h2>
 
-              <div class="d-flex align-items-center">
+              {{-- <div class="d-flex align-items-center">
                 <img src="/user/assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author-list">Maria Doe</p>
@@ -491,140 +375,11 @@
                     <time datetime="2022-01-01">Jan 1, 2022</time>
                   </p>
                 </div>
-              </div>
+              </div> --}}
 
             </article>
           </div><!-- End post list item -->
-
-          <div class="col-xl-3 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="/user/assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/user/assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-3 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="/user/assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/user/assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-3 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="/user/assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/user/assets/img/blog/blog-author-4.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Lisa Neymar</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 30, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-3 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="/user/assets/img/blog/blog-5.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/user/assets/img/blog/blog-author-5.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Denis Peterson</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 30, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-3 col-md-6">
-            <article>
-
-              <div class="post-img">
-                <img src="/user/assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="/user/assets/img/blog/blog-author-6.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Mika Lendon</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 14, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
+          @endforeach
 
         </div><!-- End blog posts list -->
 
@@ -638,89 +393,6 @@
 
       </div>
     </section><!-- End Blog Section -->
-
-    
-
-    <!-- ======= Contact Section ======= -->
-    <section id="faq" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Ajukan Pertanyaanmu</h2>
-          <p>Silakan tulis pertanyaanmu di bawah</p>
-        </div>
-
-        <div class="row gx-lg-0 gy-4">
-
-          <div class="col-lg-4">
-
-            <div class="info-container d-flex flex-column align-items-center justify-content-center">
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Lokasi:</h4>
-                  <p>Jl. Perjuangan By Pass Sunyaragi, Kota Cirebon, Jawa Barat, 45132</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>info@syekhnurjati.ac.id</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>No Telp:</h4>
-                  <p>+62231-481264</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-clock flex-shrink-0"></i>
-                <div>
-                  <h4>Jam Operasi:</h4>
-                  <p>Senin-Jum'at : 08.00 - 16.00</p>
-                </div>
-              </div><!-- End Info Item -->
-            </div>
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <!-- <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                </div>
-              </div> -->
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama" required>
-              </div>
-              <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Tulis pertanyaanmu di sini" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Pesan terkirim. Terimakasih!</div>
-              </div>
-              <div class="text-center"><button type="submit">Kirim Pertanyaan</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 

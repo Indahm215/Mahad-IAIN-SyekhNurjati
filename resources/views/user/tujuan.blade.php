@@ -15,7 +15,7 @@
   <nav>
     <div class="container">
       <ol>
-        <li><a href="{{url('/')}}">Kembali</a></li>
+        <li><a href="{{url('/web')}}">Kembali</a></li>
         <li>Tujuan</li>
       </ol>
     </div>

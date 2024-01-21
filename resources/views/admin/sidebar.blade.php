@@ -13,101 +13,57 @@
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>GENERAL</h3>
+                <h3>WEBSITE</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Beranda</span></a>
+                  <li><a><i class="fa fa-home"></i> Beranda</a>
                   </li>
-                  <li><a><i class="fa fa-user"></i> Mahaguru <span class="fa fa-plus"></span></a>
+                  <li><a><i class="fa fa-child"></i> Profiles <span class="fa fa-plus"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html">Semua Mahaguru</a></li>
-                      <li><a href="form_advanced.html">Tambah Mahaguru</a></li>
-                      <li><a href="form_validation.html"> Profil Mahaguru</a></li>
+                      <li><a href="{{url('/mahaguru')}}"><i class="fa fa-user"></i> Mahaguru </a>                    
+                      </li>
+                      <li><a href="{{url('/mahasantri')}}"><i class="fa fa-users"></i> Mahasantri </a>              
+                      </li>
+                      <li><a href="{{url('/tutor')}}"><i class="fa fa-smile-o"></i> Tutor </a>
+                      </li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-users"></i> Mahasantri <span class="fa fa-plus"></span></a>
+                  <li><a><i class="fa fa-building-o"></i> Ma'had <span class="fa fa-plus"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html">Mahasantri Aktif</a></li>
-                      <li><a href="form_advanced.html">Tambah Mahasantri</a></li>
-                      <li><a href="form.html">Mahasantri Lulus</a></li>
-                      <li><a href="form_validation.html"> Profil Mahasantri</a></li>
+                      <li><a href="{{url('/fakultas')}}"><i class="fa fa-mortar-board"></i> Fakultas </a>
+                      </li>
+                      <li><a href="{{url('/blog')}}"><i class="fa fa-globe"></i> Blog </a>
+                      </li>
+                      <li><a href="{{url('/galeri')}}"></a><i class="fa fa-picture-o"></i> Galeri </a>
+                      </li>
+                      <li><a><i class="fa fa-comments"></i> FAQ's </a>
+                      </li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-smile-o"></i> Tutor <span class="fa fa-plus"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="e_commerce.html">Semua Tutor</a></li>
-                      <li><a href="projects.html">Tambah Tutor</a></li>
-                      <li><a href="projects.html">Profil Tutor</a></li>
-                    </ul>
+                  <li><a><i class="fa fa-lock"></i> Administrator </a>                    
                   </li>
-                  <li><a><i class="fa fa-lock"></i> Administrator <span class="fa fa-plus"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="e_commerce.html">Semua Administrator</a></li>
-                      <li><a href="projects.html">Tambah Administrator</a></li>
-                      <li><a href="projects.html">Profil Administrator</a></li>
-                    </ul>
-                  </li>
+
+                  
                 </ul>
               </div>
               <div class="menu_section">
-                <h3>Mahad IAIN</h3>
+                <h3>PENDAFTARAN</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-building-o"></i> Fakultas <span class="fa fa-plus"></span></a>
+                  <li><a><i class="fa fa-pencil-square-o"></i> Pendaftar <span class="fa fa-plus"></span></a>
                     <ul class="nav child_menu">
-                      <li><a>Ilmu Tarbiyah & Keguruan<span class="fa fa-chevron-right"></span></a>
-                        <ul class="nav child_menu">                       
-                          <li><a href="#level2_1">Lihat Prodi</a></li>                          
-                          <li><a href="#level2_2">Tambah Prodi</a></li>                        
-                        </ul>
+                      <li><a><i class="fa fa-user"></i> Pendaftar Baru </a>                    
                       </li>
-                      <li><a>Ushuluddin & Adab<span class="fa fa-chevron-right"></span></a>
-                        <ul class="nav child_menu">                       
-                          <li><a href="#level2_1">Lihat Prodi</a></li>                          
-                          <li><a href="#level2_2">Tambah Prodi</a></li>                        
-                        </ul>
+                      <li><a><i class="fa fa-smile-o"></i> Pendaftar Diterima </a>              
                       </li>
-                      <li><a>Dakwah & Komunikasi Islam<span class="fa fa-chevron-right"></span></a>
-                        <ul class="nav child_menu">                       
-                          <li><a href="#level2_1">Lihat Prodi</a></li>                          
-                          <li><a href="#level2_2">Tambah Prodi</a></li>                        
-                        </ul>
+                      <li><a><i class="fa fa-frown-o"></i> Pendaftar  Ditolak </a>
                       </li>
-                      <li><a>Syariah<span class="fa fa-chevron-right"></span></a>
-                        <ul class="nav child_menu">                       
-                          <li><a href="#level2_1">Lihat Prodi</a></li>                          
-                          <li><a href="#level2_2">Tambah Prodi</a></li>                        
-                        </ul>
-                      </li>
-                      <li><a>Ekonomi & Bisnis Islam<span class="fa fa-chevron-right"></span></a>
-                        <ul class="nav child_menu">                       
-                          <li><a href="#level2_1">Lihat Prodi</a></li>                          
-                          <li><a href="#level2_2">Tambah Prodi</a></li>                        
-                        </ul>
-                      </li>
-                    </ul>
-                  <li><a><i class="fa fa-edit"></i> Pendaftaran <span class="fa fa-plus"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="form.html">Pendaftar Baru</a></li>
-                      <li><a href="form_validation.html">Unggah Dokumen</a></li>
-                    </ul>
-                  </li>
-                    <li><a><i class="fa fa-picture-o"></i> Galeri <span class="fa fa-plus"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="page_403.html">Semua Gambar</a></li>
-                      <li><a href="page_404.html">Tambah Gambar</a></li>
                     </ul>
                   </li> 
-                  <li><a><i class="fa fa-globe"></i> Blog <span class="fa fa-plus"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="page_403.html">Semua Blog</a></li>
-                      <li><a href="page_404.html">Tambah Blog</a></li>
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-question-circle"></i> FAQ's <span class="fa fa-plus"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="page_403.html">Semua Faq</a></li>
-                      <li><a href="page_404.html">Edit Faq</a></li>
-                    </ul>
-                  </li>              
+                  <li><a><i class="fa fa-list-alt"></i> Persyaratan </a>
+                  </li> 
+                  <li><a><i class="fa fa-exclamation-circle"></i> Tentang </a>
+                  </li>  
+                  <li><a><i class="fa fa-users"></i> Akun User </a>
+                  </li>            
                 </ul>
               </div>
 

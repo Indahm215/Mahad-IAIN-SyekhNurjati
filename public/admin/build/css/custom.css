@@ -4,6 +4,12 @@
   src: url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot");
   src: url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff") format("woff"), url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg"); }
 
+  input[type="submit"], .no-outline {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
+  }
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -2744,7 +2750,9 @@ span.section {
 
 .form-control {
   border-radius: 0;
-  width: 100%; }
+  width: 100%; 
+  outline: none;
+}
 
 .form-horizontal .control-label {
   padding-top: 8px; }
@@ -4190,6 +4198,7 @@ a.hiddenanchor {
   margin-top: 10px;
   padding-top: 10px; }
 
+  
 .button {
   background: #f7f9fa;
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f9fa), to(#f0f0f0));
@@ -4205,7 +4214,10 @@ a.hiddenanchor {
 
 .login_content form input[type="submit"], #content form .submit {
   float: left;
-  margin-left: 38px; }
+  margin-left: 38px; 
+
+}
+  
 
 .button a {
   background: url(http://cssdeck.com/uploads/media/items/8/8bcLQqF.png) 0 -112px no-repeat;
